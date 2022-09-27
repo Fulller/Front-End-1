@@ -1,0 +1,93 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(blue,pink);
+
+    .login{
+        width: 500px;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 6px;
+
+        .header{
+            text-align: center;
+            margin-top: 30px;
+            p{
+                color: rgba(255, 255, 255, 0.4);
+            }
+        }
+        .inputGroup{
+            box-sizing: border-box;
+            width: 300px;
+            padding: 8px;
+            margin: 6px 0px;
+            border-radius: 20px;
+            border: 2px solid pink;
+            display: flex;
+            align-items: center;
+
+            input{
+                height: 32px;
+                flex: 1;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: white;
+                font-size: 20px;
+                padding-right: 8px;
+            }
+            i{
+                font-size: 20px;
+                padding: 8px;
+            }
+        }
+        .forgot-pass{
+            a{
+                text-decoration: underline;
+            }
+        }
+        .submit{
+            padding: 8px;
+            box-sizing: border-box;
+            border: 2px solid blue;
+            border-radius: 20px;
+            margin: 12px 0px;
+            &:hover{
+                background-color: rgba(0, 0, 255, 0.5);
+            }
+
+            button{
+                background-color: transparent;
+                color: white;
+                font-size: 22px;
+                border: none;
+                outline: none;
+            }
+        }
+        .login-with{
+            display: flex;
+            margin: 12px 0px;
+            i{
+                font-size: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin: 0px 20px;
+            }
+            .fa-google{
+                color: rgb(236, 83, 83);
+            }
+            .fa-facebook{
+                color: rgb(68, 68, 247);
+            }
+        }
+    }
+
+}
