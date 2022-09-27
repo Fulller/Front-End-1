@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "scss.format.braceStyle": "expand"
+}

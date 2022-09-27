@@ -93,7 +93,20 @@ class Login extends Component {
         };
     }
 
+    
     render() {
+        function handleEyeClick(e) {
+            let inputPW = document.querySelector('.password')
+            if (inputPW.type == 'text') {
+                inputPW.type = 'password'
+                e.target.className = 'fa-regular fa-eye-slash'
+            } else
+            {
+                inputPW.type = 'text'
+                e.target.className = 'fa-regular fa-eye'
+            }
+            
+        }
         const { username, password, loginError } = this.state;
         const { lang } = this.props;
         return (
@@ -104,14 +117,11 @@ class Login extends Component {
                         <p>Please enter your login and password</p>
                     </div>
                     <div className='inputGroup'>
-                        <input></input>
+                        <input placeholder='User name'></input>
                     </div>
                     <div className='inputGroup'>
-                        <input type='password' className='password'></input>
-                        <i class="fa-regular fa-eye" onClick={() => {
-                            let inputPW = document.querySelector('.password')
-                            inputPW.type == 'text' ? inputPW.type = 'password':inputPW.type='text'
-                        }}></i>
+                        <input type='password' className='password' placeholder='Password'></input>
+                        <i class="fa-regular fa-eye" onClick={(e)=>handleEyeClick(e)}></i>
                     </div>
                     <div className='forgot-pass'><a>Forgot password?</a></div>
                     <div className='submit'><button>Login</button></div>
